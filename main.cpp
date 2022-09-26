@@ -5,7 +5,7 @@
 
 //===============================================================
 int main() {
-    
+
     std::cout<<"=================================================================================="<<std::endl;
     std::cout<<"Guess the WORDLE in 6 tries."<<std::endl<<std::endl<<
           "Each guess must be a valid 5-letter word. Hit the enter button to submit."<<std::endl<<std::endl<<
@@ -18,8 +18,7 @@ int main() {
     // Loading the new Wordle object
     Wordle WordleGame("wordList.txt");
     WordleGame.loadWordList();
-    WordleGame.setSecretWord("styre");
-    std::cout<<"Secret word is "<<WordleGame.getSecretWord()<<std::endl;
+    WordleGame.setRandomSecretWord();
 
     std::string guess;
     bool win = false;

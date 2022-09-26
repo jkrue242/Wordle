@@ -3,7 +3,6 @@
 #include "Wordle.h"
 #include <iostream>
 #include <fstream>
-using namespace std;
 
 //===============================================================
 Wordle::Wordle(std::string filename) {
@@ -20,15 +19,15 @@ Wordle::Wordle(std::string filename) {
 void Wordle::loadWordList() {
 
     // Make sure file was opened
-    string filename = getWordListFilename();
-    ifstream fin(filename);
+    std::string filename = getWordListFilename();
+    std::ifstream fin(filename);
     if (fin.fail()){
-        cout << "Error: could not open "<<getWordListFilename()<<endl;
+        std::cout << "Error: could not open "<<getWordListFilename()<<std::endl;
     }
     else
     {
         // Read how many words in file
-        string data;
+        std::string data;
         int count = 0;
         while (!fin.eof()){
             getline(fin, data);
@@ -58,7 +57,7 @@ void Wordle::printWordList() {
     // Check if wordList is empty
     if(wordList.size() == 0)
     {
-        cout<<"Error: Word list empty."<<endl;
+        std::cout<<"Error: Word list empty."<<std::endl;
     }
 
     // Print each word in wordList if not empty
@@ -66,7 +65,7 @@ void Wordle::printWordList() {
     {
         for(int i = 0; i < wordList.size(); i++)
         {
-            cout<<wordList[i]<<endl;
+            std::cout<<wordList[i]<<std::endl;
         }
     }
 }
@@ -75,7 +74,7 @@ void Wordle::printWordList() {
 void Wordle::setSecretWord(std::string word) {
     // Check if word is in word list
     if (find(wordList.begin(),wordList.end(),word) == wordList.end()){
-        std::cout<<"Error: Not a valid secret word."<<endl;
+        std::cout<<"Error: Not a valid secret word."<<std::endl;
     } else {
         secretWord = word;
     }
@@ -94,10 +93,10 @@ bool Wordle::makeGuess(std::string word) {
     bool correct = false;
     // filter out invalid guesses
     if (find(wordList.begin(), wordList.end(), word) == wordList.end() && word.size() == 5) {
-        std::cout << "Error: " << word << " is not in word list. Try again." << endl;
+        std::cout << "Error: " << word << " is not in word list. Try again." << std::endl;
         return false;
     } else if (word.size() != 5) {
-        std::cout << "Error: " << word << " is not 5 characters. Try again." << endl;
+        std::cout << "Error: " << word << " is not 5 characters. Try again." << std::endl;
         return false;
     }
         // if guess was valid
@@ -157,13 +156,13 @@ bool Wordle::makeGuess(std::string word) {
 void Wordle::print() {
     for(int i = 0; i < guessNum; i++)
     {
-        cout<<i+1<<": "<<guess[i]<<" "<<feedback[i]<<endl;
+        std::cout<<i+1<<": "<<guess[i]<<" "<<feedback[i]<<std::endl;
     }
 }
 
 //===============================================================
 void Wordle::printAvailableLetters() {
-    cout<<"Available letters to guess: ";
+    std::cout<<"Available letters to guess: ";
     for(int i = 0; i < 26; i++)
     {
         if(availableLetters[i])
@@ -171,11 +170,11 @@ void Wordle::printAvailableLetters() {
             // no comma on last letter
             if(i == 25)
             {
-                cout<<ALPHABET[i]<<endl;
+                std::cout<<ALPHABET[i]<<std::endl;
             }
             else
             {
-                cout<<ALPHABET[i]<<", ";
+                std::cout<<ALPHABET[i]<<", ";
             }
         }
     }
