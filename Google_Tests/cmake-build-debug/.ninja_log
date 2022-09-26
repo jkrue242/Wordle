@@ -1,0 +1,26 @@
+# ninja log v5
+3	507	1664208958684838773	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+1	81	1664226249698032285	build.ninja	7969b28eaf771501
+3	514	1664208513781246918	CMakeFiles/Google_Tests_run.dir/ConstructorTest.cc.o	ce0428eedd3a416c
+2	560	1664208847501361398	CMakeFiles/Google_Tests_run.dir/ConstructorTest.cpp.o	a3651fffc85c5737
+3	443	1664207573779011994	lib/googletest-main/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	353cc850a8fd95f4
+2	559	1664208847501323107	CMakeFiles/Google_Tests_run.dir/SetterTest.cpp.o	b85341ba2a5d9cf9
+3	1389	1664207574722234012	lib/googletest-main/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	81d3f190bbf61fa9
+1414	1425	1664207574763505000	lib/libgtest_main.a	59f73b5a615e430a
+1389	1414	1664207574751865000	lib/libgtest.a	dc317a5c76e363af
+507	561	1664208958740709202	Google_Tests_run	6f8a36118c57eeba
+0	79	1664226249698032285	build.ninja	7969b28eaf771501
+3	514	1664226250217358573	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+514	569	1664226250274087906	Google_Tests_run	6f8a36118c57eeba
+3	532	1664226299512969366	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+532	586	1664226299569742864	Google_Tests_run	6f8a36118c57eeba
+2	529	1664226464460113977	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+529	584	1664226464517511240	Google_Tests_run	6f8a36118c57eeba
+2	525	1664226547591463323	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+525	579	1664226547647339985	Google_Tests_run	6f8a36118c57eeba
+2	532	1664226560449667986	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+532	587	1664226560506045168	Google_Tests_run	6f8a36118c57eeba
+3	537	1664226580953137366	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+537	591	1664226581009978570	Google_Tests_run	6f8a36118c57eeba
+3	525	1664226611045742646	CMakeFiles/Google_Tests_run.dir/Tests.cpp.o	e0b52a593e5b35ae
+525	579	1664226611101792551	Google_Tests_run	6f8a36118c57eeba

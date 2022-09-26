@@ -1,0 +1,4 @@
+/private/var/folders/kk/rrn70w0j58l3gj1_ggmbkg5h0000gn/T/AppTranslocation/29FFBB0B-F4C5-47A2-9E51-CFC22B34FF75/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/kk/rrn70w0j58l3gj1_ggmbkg5h0000gn/T/AppTranslocation/29FFBB0B-F4C5-47A2-9E51-CFC22B34FF75/d/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_OSX_ARCHITECTURES=x86_64 -G Ninja -S /Users/josephkrueger/projects/Wordle/Google_Tests -B /Users/josephkrueger/projects/Wordle/Google_Tests/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/josephkrueger/projects/Wordle/Google_Tests/cmake-build-debug

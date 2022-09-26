@@ -1,0 +1,5 @@
+if(EXISTS "/Users/josephkrueger/projects/Wordle/Google_Tests/cmake-build-debug/ConstructorTest[1]_tests.cmake")
+  include("/Users/josephkrueger/projects/Wordle/Google_Tests/cmake-build-debug/ConstructorTest[1]_tests.cmake")
+else()
+  add_test(ConstructorTest_NOT_BUILT ConstructorTest_NOT_BUILT)
+endif()

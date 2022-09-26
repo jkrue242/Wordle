@@ -7,7 +7,7 @@
 
 class Wordle {
 public:
-    explicit Wordle(std::string filename="");
+    Wordle(std::string filename="");
 
     void setWordListFilename(std::string filename){this->wordListFilename = filename;}
     std::string getWordListFilename(){return this->wordListFilename;}
@@ -31,9 +31,9 @@ public:
                                'o', 'p', 'q', 'r', 's', 't', 'u',
                                'v', 'w', 'x', 'y', 'z'};
 
+    std::vector<std::string> wordList;
 private:
     std::string wordListFilename;
-    std::vector<std::string> wordList;
 
     std::string secretWord;
 
