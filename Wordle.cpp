@@ -1,4 +1,3 @@
-// Written by Joseph Krueger
 
 #include "Wordle.h"
 #include <iostream>

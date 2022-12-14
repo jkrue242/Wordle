@@ -1,4 +1,3 @@
-// Written by Joseph Krueger
 #pragma once
 
 #include <string>
