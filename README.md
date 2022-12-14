@@ -1,1 +1,3 @@
-Homework project for ENGR:2730
+# Wordle
+
+Homework project Fall 2022
